@@ -1,0 +1,62 @@
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;          /* full viewport width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red; /* for testing */
+}
+
+
+.logo-ECHO{
+    width:50px;
+    cursor: pointer;
+    fill: white;
+}
+
+
+.left {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: space-between;
+}
+
+
+.nav-links {
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 6px 15px;
+    border-radius: 50px;
+    width: 500px;
+}
+
+.search-box input {
+    flex: 1;                  /* fills remaining space */
+    padding: 4px 8px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #003893;
+    font-size: 16px;
+}
+
+.center{
+    flex:1;
+    display: flex;
+    justify-content: center;
+
+}
+

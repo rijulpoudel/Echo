@@ -1,12 +1,34 @@
 import React from 'react'
-import './Navbar.css' //this is to bring in the navbar.css page in react
+import './Navbar.css' // imports your CSS file for styling
+import nepal from '../../assets/Flag_of_Nepal.svg'
+import ECHO from '../../assets/ECHOlogo.svg'
 
-const Navbar = (props) => {
+const Navbar = () => {
   return (
-    <div className = 'navbar' >
+    <div className="navbar">
+      <div className="left">
+        <img src={ECHO} alt="Echo Logo" className="logo-ECHO" />
+        <div className="nav-links">
+          <i className="bi bi-chat-dots"></i>
+          <i className="bi bi-bell"></i>
+          <i className="bi bi-plus"></i>
+        </div>
+      </div>
 
-      <h1> {props.color}</h1>
+      <div className="center">
+        <div className="search-box">
+          <input type="text" placeholder="Search for Community posts" />
+          <i className="bi bi-search"></i>
+        </div>
+      </div>
+
+      <div className="right">
+        {/* Optional right-side icons or leave empty */}
+      </div>
     </div>
+
+
+   
   )
 }
 
