@@ -1,4 +1,6 @@
 
+
+
 .navbar {
   position: fixed;
   top: 0;
@@ -7,12 +9,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: red; /* for testing */
 }
 
 
 .logo-ECHO{
-    width:50px;
+    width:75px;
     cursor: pointer;
     fill: white;
 }
@@ -21,26 +22,30 @@
 .left {
     display: flex;
     align-items: center;
-    width: 150px;
+   
+   width: 300px;
     justify-content: space-between;
 }
 
 
 .nav-links {
     font-size: 20px;
-    cursor: pointer;
     display: flex;
-    gap: 10px;
+    cursor: pointer;
+    display: flex   ;
+    width: 150px;
+    justify-content: space-between;
     align-items: center;
+    
 }
 
 .search-box{
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color:#F2F2F2;
     padding: 6px 15px;
     border-radius: 50px;
-    width: 500px;
+    width: 1200px;
 }
 
 .search-box input {
@@ -53,10 +58,46 @@
     font-size: 16px;
 }
 
-.center{
-    flex:1;
-    display: flex;
-    justify-content: center;
-
+/* Right section buttons */
+.right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 300px;
+  
 }
 
+.btn-signin {
+  padding: 8px 20px;
+  background-color: #F2F2F2;
+  color: #6689A1;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-signin:hover {
+  background-color: #DC143C;
+  color: #003893;
+}
+
+.btn-register {
+  padding: 8px 20px;
+  background-color: #F2F2F2;
+  color: #003893;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-register:hover {
+  background-color: #003893;
+  color: white;
+  border-color: white;
+}
