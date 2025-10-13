@@ -1,13 +1,15 @@
-import React from 'react'
-import './Navbar.css' // imports your CSS file for styling
-import nepal from '../../assets/Flag_of_Nepal.svg'
-import ECHO from '../../assets/ECHOlogo.svg'
+import React from 'react';
+import './Navbar.css';
+import ECHO from '../../assets/ECHOlogo.svg'; // your SVG logo
+import ProfileDropdown from '../Profile/Profile';
 
 const Navbar = () => {
   return (
     <div className="navbar">
+      {/* Left section: Logo + ECHO + nav icons */}
       <div className="left">
         <img src={ECHO} alt="Echo Logo" className="logo-ECHO" />
+
         <div className="nav-links">
           <i className="bi bi-chat-dots"></i>
           <i className="bi bi-bell"></i>
@@ -15,6 +17,7 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Center section: Search box */}
       <div className="center">
         <div className="search-box">
           <input type="text" placeholder="Search for Community posts" />
@@ -22,14 +25,13 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Right section (optional) */}
       <div className="right">
-        {/* Optional right-side icons or leave empty */}
+        <button className = 'btn-signin'> Sign In </button>
+        <button className = 'btn-register'> Register</button>
       </div>
     </div>
+  );
+};
 
-
-   
-  )
-}
-
-export default Navbar
+export default Navbar;
