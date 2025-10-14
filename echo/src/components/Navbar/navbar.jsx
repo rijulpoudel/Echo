@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-import ECHO from '../../assets/ECHOlogo.svg'; // your SVG logo
+import ECHO from '../../assets/ECHOLIGHT.svg'; // your SVG logo
 import ProfileDropdown from '../Profile/Profile';
 
 const Navbar = () => {
@@ -27,8 +27,7 @@ const Navbar = () => {
 
       {/* Right section (optional) */}
       <div className="right">
-        <button className = 'btn-signin'> Sign In </button>
-        <button className = 'btn-register'> Register</button>
+        <ProfileDropdown />
       </div>
     </div>
   );
