@@ -1,0 +1,58 @@
+.profile-container {
+  position: relative;
+  width: 400px;
+}
+
+.profile-button {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  background-color: #F2F2F2;
+  color: #6689A1;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.profile-button:hover {
+  background-color: #e0e0e0;
+}
+
+.profile-avatar {
+  width: 35px;
+  height: 35px;
+  background-color: #6689A1;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.profile-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Dropdown menu styles */
+.dropdown{
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background-color: black;
+  border-radius: 10px;
+  min-width: 220px;
+  overflow: scroll;
+  
+}
+
+.dropdown-header {
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+

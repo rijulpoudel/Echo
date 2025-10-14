@@ -1,28 +1,31 @@
 
-
-
 .navbar {
-  position: fixed;
+  position: absolute;
+  height: auto;
   top: 0;
   left: 0;
-  width: 100vw;          /* full viewport width */
+  width: 100vw;         
   display: flex;
   justify-content: space-between;
   align-items: center;
+    z-index: 1000;           /* ADD THIS */
+    background-color: transparent !important;
+  padding: 10px 0;         /* ADD THIS - gives some breathing room */
+  overflow: visible;
+  
 }
 
 
 .logo-ECHO{
-    width:75px;
+    width:80px;
     cursor: pointer;
-    fill: white;
+    margin-left: 25px;
 }
 
 
 .left {
     display: flex;
     align-items: center;
-   
    width: 300px;
     justify-content: space-between;
 }
@@ -36,8 +39,29 @@
     width: 150px;
     justify-content: space-between;
     align-items: center;
-    
+    color: #183460;
 }
+/*call the class name and then the individual icon*/
+.nav-links .bi-chat-dots:hover {
+  color: #DC143C; /* Green */
+}
+
+.nav-links .bi-bell:hover {
+  color: #DC143C; /* Yellow/Gold */
+}
+
+.nav-links .bi-plus:hover {
+  color: #DC143C; /* Blue */
+}
+
+.search-box .bi-search:hover{
+    color: #DC143C; 
+}
+
+.search-box .bi-search{
+    color: #183460; 
+}
+
 
 .search-box{
     display: flex;
@@ -46,6 +70,7 @@
     padding: 6px 15px;
     border-radius: 50px;
     width: 1200px;
+    cursor: pointer;
 }
 
 .search-box input {
@@ -65,39 +90,7 @@
   align-items: center;
   justify-content: space-evenly;
   width: 300px;
-  
+  overflow: visible;
+  position: relative;
 }
 
-.btn-signin {
-  padding: 8px 20px;
-  background-color: #F2F2F2;
-  color: #6689A1;
-  border: 2px solid white;
-  border-radius: 20px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.btn-signin:hover {
-  background-color: #DC143C;
-  color: #003893;
-}
-
-.btn-register {
-  padding: 8px 20px;
-  background-color: #F2F2F2;
-  color: #003893;
-  border: 2px solid white;
-  border-radius: 20px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.btn-register:hover {
-  background-color: #003893;
-  color: white;
-  border-color: white;
-}
