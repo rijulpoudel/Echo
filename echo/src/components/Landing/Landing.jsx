@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <div 
       className="landing-container"
-      style={{ backgroundImage: `url(${heroImage})` }}
+      // style={{ backgroundImage: `url(${heroImage})` }}
     >
       <div className="overlay">
         <h1 className="landing-title">Welcome to Echo</h1>
