@@ -9,6 +9,7 @@ const App = () =>{
   return( /* have to use ( because it returns jsx/html)*/
     <>
       <main>
+        Hello World!
         <Navbar/>
         <Landing/>
       </main>
